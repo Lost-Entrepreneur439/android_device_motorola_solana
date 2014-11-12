@@ -79,7 +79,8 @@ PRODUCT_COPY_FILES += \
 # Device files
 PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/media_profiles.xml:system/etc/media_profiles.xml \
-    $(DEVICE_FOLDER)/apns-conf.xml:system/etc/apns-conf.xml
+    $(DEVICE_FOLDER)/apns-conf.xml:system/etc/apns-conf.xml \
+    $(DEVICE_FOLDER)/prebuilt/usr/keylayout/atmxt-i2c.kl:system/usr/keylayout/atmxt-i2c.kl
 
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
