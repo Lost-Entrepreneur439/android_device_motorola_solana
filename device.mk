@@ -46,12 +46,12 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/init.target.rc:root/init.target.rc \
 
 # Kexec files (overriding omap4-common)
+PRODUCT_PACKAGES += etc/kexec/ramdisk.img
 PRODUCT_COPY_FILES += \
     $(DEVICE_FOLDER)/kexec/devtree:system/etc/kexec/devtree \
     $(DEVICE_FOLDER)/kexec/arm_kexec.ko:system/etc/kexec/arm_kexec.ko \
     $(DEVICE_FOLDER)/kexec/kexec.ko:system/etc/kexec/kexec.ko \
     $(DEVICE_FOLDER)/kexec/uart.ko:system/etc/kexec/uart.ko \
-    $(OUT)/ramdisk.img:system/etc/kexec/ramdisk.img \
     $(OUT)/kernel:system/etc/kexec/kernel
 
 # HASH: Removed for now, causes a crash
