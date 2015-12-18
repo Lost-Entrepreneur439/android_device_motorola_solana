@@ -575,7 +575,7 @@ on property:ro.hdcp.support=1
 on property:ro.hdcp.support=2
     chown system media /dev/omap-hdcp
     chmod 0660 /dev/omap-hdcp
-service battd /system/bin/battd
+service battd /system/bin/battd.sh
     class core
     socket battdsock stream 0666 mot_accy mot_accy
     user root
@@ -585,7 +585,7 @@ service charge_only_mode /system/bin/charge_only_mode
     user root
     group graphics system input
     disabled
-service whisperd /system/bin/whisperd /dev/ttyO1
+service whisperd /system/bin/whisperd.sh /dev/ttyO1
     class core
     user mot_whisper
     group mot_whisper mot_pwric
@@ -716,7 +716,7 @@ service gadget-qbp-modem /system/bin/tty2ttyd persist.ril.modem.ttydevice /dev/t
     user radio
     group radio
     disabled
-service thermal_manager /system/bin/thermaldaemon
+service thermal_manager /system/bin/thermaldaemon.sh
     class main
     user system
     group system
