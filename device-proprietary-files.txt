@@ -1,5 +1,5 @@
 # system/lib/hw
-lib/hw/gps.solana.so
+lib/hw/gps.vendor.so
 
 # RIL files (solana)
 etc/ppp/peers/pppd-ril.options
