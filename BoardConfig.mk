@@ -47,3 +47,7 @@ TARGET_KERNEL_VARIANT_CONFIG := mapphone_solana_defconfig
 BOARD_USES_LEGACY_RIL := true
 
 BOARD_USE_LEGACY_SENSORS_FUSION := false
+
+BOARD_SEPOLICY_DIRS += \
+    device/motorola/solana/sepolicy
+
