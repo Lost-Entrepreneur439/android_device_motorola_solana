@@ -653,7 +653,7 @@ service panic_daemon /system/usr/bin/panic_daemon
     socket panic_daemon stream 660 radio radio
     onrestart exec /system/bin/reboot
 # Ecompass daemon
-service akmd8975 /system/bin/ak8975fs
+service akmd8975 /system/bin/ak8975fs.sh
     class main
     user compass
     group compass misc input
