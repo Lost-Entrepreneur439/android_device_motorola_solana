@@ -1,4 +1,5 @@
 import /init.target.rc
+import /init.omap4.rc
 
 on init
 
@@ -34,6 +35,8 @@ on fs
     write /sys/block/zram0/comp_algorithm lz4
     mount_all /fstab.mapphone_cdma
     swapon_all /fstab.mapphone_cdma
+    # Enable PVR modules
+    insmod /system/lib/modules/pvrsrvkm_sgx540_120.ko
 
 on post-fs
     mkdir /data/misc/pds 0700 root root
@@ -47,10 +50,6 @@ on post-fs
 
     mkdir /data/misc/ril 0771 radio radio
     restorecon_recursive /data/misc/ril
-
-# Enable PVR modules
-    insmod /system/lib/modules/pvrsrvkm_sgx540_120.ko
-    insmod /system/lib/modules/omaplfb_sgx540_120.ko
 
     chown system system /pds
     chmod 0775 /pds
