@@ -7,7 +7,7 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := cm_solana
+PRODUCT_NAME := lineage_solana
 PRODUCT_BRAND := verizon
 PRODUCT_DEVICE := solana
 PRODUCT_DEVICE_PREFIX := cdma
