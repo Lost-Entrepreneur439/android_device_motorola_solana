@@ -2,7 +2,7 @@
 $(call inherit-product, device/motorola/solana/full_solana.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 
 #
 # Setup device specific product configuration.
