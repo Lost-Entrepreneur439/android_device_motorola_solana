@@ -117,3 +117,6 @@ ro.mot.hw.uaprof=http://uaprof.motorola.com/phoneconfig/MotoMB200/profile/MotoMB
 
 # Additions
 sys.mem.max_hidden_apps=3
+
+# low ram
+ro.config.low_ram=true
