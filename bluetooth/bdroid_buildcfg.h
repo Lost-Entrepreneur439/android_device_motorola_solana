@@ -20,4 +20,6 @@
 #define BTM_DEF_LOCAL_NAME   "Motorola Droid 3"
 #define BTHC_USERIAL_READ_MEM_SIZE 2048
 
+#include "../../omap4-common/bluetooth/bdroid_common.h"
+
 #endif

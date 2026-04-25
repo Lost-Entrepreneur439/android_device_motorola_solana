@@ -50,4 +50,3 @@ BOARD_USE_LEGACY_SENSORS_FUSION := false
 
 BOARD_SEPOLICY_DIRS += \
     device/motorola/solana/sepolicy
-
